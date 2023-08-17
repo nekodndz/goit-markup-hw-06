@@ -136,19 +136,21 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 .main-section-heading-one {
   color: var(--white, #fff);
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .main-section-button {
   color: var(--white, #fff);
@@ -388,7 +390,9 @@ img {
 }
 .team-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 72px;
   padding-left: 67px;
   padding-right: 67px;
@@ -474,8 +478,7 @@ img {
 .team-card-icon-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
   margin-top: 8px;
   padding: 0 16px;
 }
@@ -524,12 +527,13 @@ img {
 }
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 72px 16px;
 }
 .client-item {
-  width: 168px;
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .client-icon {
@@ -984,9 +988,28 @@ img {
   .team-list {
     flex-direction: row;
     gap: 64px 24px;
+    padding-left: 93px;
+    padding-right: 93px;
   }
   .team-item {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 48px) / 2);
+  }
+  .client-item {
+    max-width: 168px;
+    height: 88px;
+  }
+  .client-list {
+    padding-left: 85px;
+    padding-right: 85px;
+    gap: 72px 24px;
+  }
+  .main-section-heading-one {
+    margin-bottom: 36px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    width: 496px;
+    padding: 0;
   }
 }
 
@@ -1024,8 +1047,23 @@ img {
   .team-list {
     flex-direction: row;
     gap: 24px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .team-item {
     width: calc((100% - 72px) / 4);
+  }
+  .client-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .main-section-heading-one {
+    margin-bottom: 48px;
   }
 }
