@@ -54,11 +54,79 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="header-menu-btn">
+        <button type="button" class="header-menu-btn" data-menu-open>
           <svg class="icon-menu" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu-top">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-button-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-nav-list list">
+            <li class="mob-menu-nav-item">
+              <a href="./index.html" class="mob-menu-nav-link link current-menu"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-nav-item">
+              <a href="./portfolio.html" class="mob-menu-nav-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-nav-item">
+              <a href="" class="mob-menu-nav-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-menu-contact">
+            <li>
+              <a href="tel:+110001111111" class="mob-menu-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-menu-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-sm-list menu-sm">
+            <li class="footer-sm-item">
+              <a href="" class="footer-sm-link">
+                <svg class="footer-sm-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-sm-item">
+              <a href="" class="footer-sm-link">
+                <svg class="footer-sm-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-sm-item">
+              <a href="" class="footer-sm-link">
+                <svg class="footer-sm-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-sm-item">
+              <a href="" class="footer-sm-link">
+                <svg class="footer-sm-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -563,5 +631,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
