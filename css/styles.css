@@ -344,6 +344,7 @@ img {
 }
 .footer-text {
   color: var(--cloud, #f4f4fd);
+  margin: 0 auto;
 }
 
 /*-----------------------Block-model header------------------------*/
@@ -439,15 +440,17 @@ img {
 .footer {
   padding: 96px 0;
 }
-.footer-container {
+/*.footer-container {
   display: flex;
   flex-direction: column;
   gap: 72px;
-}
+}*/
 .logo-footer {
-  display: block;
   margin-bottom: 16px;
-  display: inline-block;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .footer-text {
   display: block;
@@ -594,16 +597,23 @@ img {
   border-color: #404bbf;
 }
 
-.footer-container {
+/*.footer-container {
   display: flex;
   align-items: baseline;
-}
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+}*/
 .footer-left-part {
   margin-bottom: 72px;
 }
 .footer-sm-list {
   display: flex;
   gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
 }
 .footer-sm-text {
   color: var(--white, #fff);
@@ -942,7 +952,7 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 165px;
+  width: 165px;
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
@@ -956,7 +966,7 @@ img {
 
 .footer-input {
   width: 100%;
-  max-width: 264px;
+  max-width: 398px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--white, #fff);
@@ -968,9 +978,6 @@ img {
   letter-spacing: 0.04em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #ffffff;
-}
-.footer-sm {
-  margin-right: 80px;
 }
 .form-hidden {
   color: var(--white, #fff);
@@ -1078,6 +1085,22 @@ img {
     font-size: 12px;
     line-height: 1.17; /* 116.667% */
     letter-spacing: 0.04em;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .footer-top-tab {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1257,4 +1280,12 @@ img {
 .menu-button-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-sm,
+.subscribe {
+  text-align: center;
+}
+.subscribe-btn-container {
+  display: flex;
+  justify-content: center;
 }
