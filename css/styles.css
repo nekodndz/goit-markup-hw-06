@@ -536,8 +536,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .client-heading {
   color: #2e2f42;
@@ -1028,15 +1028,13 @@ img {
     gap: 64px 24px;
   }
   .team-item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .client-item {
     max-width: 168px;
     height: 88px;
   }
   .client-list {
-    padding-left: 85px;
-    padding-right: 85px;
     gap: 72px 24px;
   }
   .main-section-heading-one {
@@ -1128,6 +1126,8 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .advantages-item {
     width: calc((100% - 72px) / 4);
@@ -1223,6 +1223,10 @@ img {
   }
   .subscribe {
     margin-top: 0;
+  }
+  .client {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 .mob-menu {
