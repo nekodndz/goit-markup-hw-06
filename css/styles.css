@@ -169,8 +169,6 @@ img {
   margin: 0 auto;
   margin-bottom: 72px;
   width: 320px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .main-section-button {
   color: var(--white, #fff);
@@ -416,8 +414,6 @@ img {
   align-items: center;
   justify-content: center;
   gap: 72px;
-  padding-left: 67px;
-  padding-right: 67px;
 }
 .team-heading-three {
   margin-bottom: 8px;
@@ -507,9 +503,9 @@ img {
 .team-card-icon-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 8px;
-  padding: 0 16px;
+  gap: 24px;
 }
 .team-card-icon {
   display: block;
@@ -613,7 +609,6 @@ img {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 72px;
 }
 .footer-sm-text {
   color: var(--white, #fff);
@@ -932,6 +927,9 @@ img {
   background-color: #404bbf;
 }
 /*---------------footer-subscribe----------------*/
+.subscribe {
+  margin-top: 72px;
+}
 .subscribe-btn {
   border: none;
   color: var(--white, #fff);
@@ -1011,10 +1009,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 761px;
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .advantages-item {
-    width: calc((100% - 36px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .advantages-list {
     display: flex;
@@ -1026,8 +1026,6 @@ img {
   .team-list {
     flex-direction: row;
     gap: 64px 24px;
-    padding-left: 93px;
-    padding-right: 93px;
   }
   .team-item {
     width: calc((100% - 48px) / 2);
@@ -1079,7 +1077,8 @@ img {
   .address-list {
     flex-direction: column;
     gap: 12px;
-    padding: 16px 16px 16px 0;
+    align-items: center;
+    justify-content: center;
   }
   .address-link {
     padding: 0;
@@ -1089,11 +1088,8 @@ img {
     line-height: 1.17; /* 116.667% */
     letter-spacing: 0.04em;
   }
-  .footer-container {
-    padding: 96px 164px 96px 108px;
-  }
   .footer {
-    padding: 0;
+    padding: 100px 0;
   }
   .footer-form {
     display: flex;
@@ -1109,7 +1105,6 @@ img {
     gap: 24px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 72px;
   }
   .logo-footer,
   .footer-sm-text {
@@ -1125,8 +1120,14 @@ img {
     min-width: 408px;
   }
 }
-
-@media screen and (min-width: 1166px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .client .container,
+  .footer .container,
+  .team .container {
+    width: 584px;
+  }
+}
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
@@ -1203,10 +1204,14 @@ img {
     gap: 40px;
     right: auto;
   }
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
+  }
   .footer-container {
     display: flex;
     gap: 80px;
-    padding: 100px 0;
   }
   .footer-top-tab {
     gap: 120px;
@@ -1217,6 +1222,9 @@ img {
   }
   .footer-text {
     width: 264px;
+  }
+  .subscribe {
+    margin-top: 0;
   }
 }
 .mob-menu {
@@ -1229,20 +1237,17 @@ img {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  padding: 24px 24px 40px 40px;
+  padding: 80px 24px 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
 }
-.mob-menu-top {
-  margin-bottom: 50px;
-}
+
 .mob-menu-nav-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 32px;
 }
 .mob-menu-nav-link {
   color: #2e2f42;
@@ -1279,11 +1284,19 @@ img {
   letter-spacing: 0.02em;
 }
 .menu-sm {
-  justify-content: space-between;
+  display: flex;
+  gap: 56px;
+  align-items: center;
   margin-top: 48px;
-  padding-right: 60px;
 }
-
+@media screen and (max-width: 427px) {
+  .menu-sm {
+    gap: 24px;
+  }
+  .main-section-heading-one {
+    width: 100%;
+  }
+}
 .menu-close-btn {
   position: absolute;
   top: 24px;
