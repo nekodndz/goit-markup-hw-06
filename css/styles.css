@@ -1103,8 +1103,6 @@ img {
   .footer-top-tab {
     display: flex;
     gap: 24px;
-    align-items: center;
-    justify-content: center;
   }
   .logo-footer,
   .footer-sm-text {
